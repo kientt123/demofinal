@@ -11,7 +11,7 @@
 
 <body>
     <Center><h1>ATN Toy Store</h1></Center>
-    <div style="width: 50%;">
+    <center><div style="width: 50%;">
         <form action="/insert" method="post">
             <div class="mb-3">
                 <label class="form-label" for="txtName"> Product Name</label>
@@ -28,7 +28,7 @@
             </div>
             <input type="submit" class="btn btn-primary" value="Insert">
         </form>
-    </div>
+    </div></center>
 
     <hr>
    <center><table border="1" width="50%">
@@ -46,7 +46,7 @@
             </td>
             <td>{{name}}</td>
             <td>{{price}}</td>
-            <Td><img src="{{picURL}}" width="120" height="100" /></Td>
+            <td><img src="{{picURL}}" width="120" height="100" /></td>
             <td>
                 <a href="/edit/{{_id}}">Edit</a>
             </td>
