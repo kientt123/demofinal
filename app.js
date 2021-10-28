@@ -39,7 +39,7 @@ app.get('/delete/:id', async (req, res) => {
 app.post('/insert', async (req, res) => {
     const name = req.body.txtName
     const price = req.body.txtPrice
-    const url = req.body.txtURL;
+    const url = req.body.txtURL;   
     const obj = { name: name, price: price, picURL: url }
     await insertToDB(obj, "Products")
     res.redirect('/')
