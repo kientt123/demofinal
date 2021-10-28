@@ -7,14 +7,14 @@
     <title>Edit product</title>
 </head>
 <body>
-    <h1>Update Product</h1>
+    <h1>Edit Product</h1>
     <form action="/update" method="post">
         <input type="hidden" name="txtId" value="{{product._id}}">
         Name : <input type="text" name="txtName" value="{{product.name}}">
         <Br>
         Price : <input type="text" name="txtPrice" value="{{product.price}}">
         <br/>
-        <input type="submit" value="Update">
+        <input type="submit" value="Edit">
     </form>
 </body>
 </html>
