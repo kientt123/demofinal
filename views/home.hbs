@@ -38,17 +38,19 @@
             <center><td>Price</td></center>
             <center><Td>Picture</Td></center>
             <center><td>Edit</td></center>
+            <center><td>Delete</td></center>
         </tr>
         {{#each products}}
         <tr>
-            <td>
-                <a onclick="return confirm('Are your sure?')" href="/delete/{{_id}}"> {{_id}}</a>
-            </td>
+            <td>{{_id}}</td>
             <td>{{name}}</td>
             <td>{{price}}</td>
             <td><img src="{{picURL}}" width="120" height="100" /></td>
             <td>
                 <a href="/edit/{{_id}}">Edit</a>
+            </td>
+            <td>
+                <a onclick="return confirm('Do you want to delete?')" href="/delete/{{_id}}">Delete</a>
             </td>
         </tr>
         {{/each}}
